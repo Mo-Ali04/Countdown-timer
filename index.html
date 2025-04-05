@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Countdown</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="fl-row">
+            <label for="datetime">Choose a time for the countdown:</label>
+            <input type="datetime-local" id="datetime" value="">
+        </div>
+        <div id="in-div"></div>
+        <button id="startCountdown">Start Countdown</button>
+    </header>
+    <!-- Countdown Section -->
+    <section>
+        <!-- Start of Countdown -->
+        <div class="counter-wrap">
+            <h4>Countdown in: </h4>
+    
+            <div class="counter">
+                <div class="counter-time days">
+                    00
+                    <span>D</span>
+                </div>
+                <div class="counter-time hours">
+                    00
+                    <span>H</span>
+                </div>
+                <div class="counter-time minutes">
+                    00
+                    <span>M</span>
+                </div>
+                <div class="counter-time seconds">
+                    00
+                    <span>S</span>
+                </div>
+            </div>  <!-- End counter -->
+        </div> <!-- End counter-wrap -->
+    </section>
+    
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.13/dayjs.min.js"></script>
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
